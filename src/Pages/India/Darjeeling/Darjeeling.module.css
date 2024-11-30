@@ -1,0 +1,135 @@
+.main {
+  margin: 0rem 1.875rem;
+}
+
+.main > p {
+  color: black;
+  margin: 1rem 0rem;
+  font-size: 1.1rem;
+}
+
+.darjeeling-heading {
+  font-size: 2.25rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.darjeeling-heading .underline {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 5%;
+  background-color: #32b67a;
+  margin-top: 0.5rem;
+  position: absolute;
+}
+
+.darjeeling-description {
+  margin-top: 0.5rem;
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.sightseeing-divider {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.125em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.sightseeing-divider h2 {
+  background-color: #f4f4f4;
+  display: inline-block;
+  position: relative;
+  color: rgb(66, 66, 66);
+  padding: 0 30px;
+  font-weight: 600;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.sightseeing-divider::after,
+.sightseeing-divider::before {
+  content: "";
+  padding: 0.5px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #7c7c8b;
+}
+
+.sightseeing-divider::after {
+  content: "";
+  top: 45%;
+}
+.sightseeing-divider::before {
+  content: "";
+  top: 55%;
+}
+
+@media (max-width: 768px) {
+  .sightseeing-title {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .sightseeing-divider h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* General Styles */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.container > *:nth-last-child(-n + 1) {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+@media (max-width: 2560px) {
+  .container {
+    justify-content: space-between;
+  }
+  .container > *:nth-last-child(-n + 1) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    margin: 0rem 1.275rem;
+  }
+
+  .darjeeling-heading {
+    font-size: 1.5rem;
+  }
+
+  .darjeeling-description {
+    font-size: 1rem;
+  }
+  .container > *:nth-last-child(-n + 1) {
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+}
